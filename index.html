@@ -2,13 +2,10 @@
 <html lang="en">
 	<head>
 		<script>
-			Inp1 = parseFloat(document.getElementById('Inp1').value);
-			Inp2 = parseFloat(document.getElementById('Inp2').value);
-			Ans = document.getElementById('Ans').value;
-			const add = () => Ans = Inp1 + Inp2;
-			const sub = () => Ans = Inp1 - Inp2;
-			const mul = () => Ans = Inp1 * Inp2;
-			const div = () => Ans = Inp1 / Inp2;
+			const add = () => document.getElementById('Ans').value = parseFloat(document.getElementById('Inp1').value) + parseFloat(document.getElementById('Inp2').value);
+			const sub = () => document.getElementById('Ans').value = parseFloat(document.getElementById('Inp1').value) - parseFloat(document.getElementById('Inp2').value);
+			const mul = () => document.getElementById('Ans').value = parseFloat(document.getElementById('Inp1').value) * parseFloat(document.getElementById('Inp2').value);
+			const div = () => document.getElementById('Ans').value = parseFloat(document.getElementById('Inp1').value) / parseFloat(document.getElementById('Inp2').value);
 		</script>
         <link rel='stylesheet' href="bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
